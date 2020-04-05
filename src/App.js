@@ -1,19 +1,14 @@
 import React from 'react';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Column from './components/Column';
+import { Route, Switch } from "react-router-dom";
+import DifferentView from './views/DifferentView';
+import Home from './views/Home';
 
 function App() {
   return (
-    <div className="app">
-      <Sidebar />
-      <div className='content'>
-        <Header />
-        <div class="row">
-          <Column/>
-        </div>
-      </div>
-    </div>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={DifferentView} />
+    </Switch>
   );
 }
 
