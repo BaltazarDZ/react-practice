@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../components/Header';
-import Column from '../components/Column';
+import Header from '../../components/Header';
+import Column from '../../components/Column';
 
-const DifferentView = () => {
+const AbyssView = () => {
     return(
         <div>
             <div className='content'>
-                <Header heading='Different view'/>
+                <Header heading='Abyss view'/>
                 <div class="row">
                     <Column />
                 </div>
@@ -15,4 +15,4 @@ const DifferentView = () => {
     );
 }
 
-export default DifferentView;
+export default AbyssView;

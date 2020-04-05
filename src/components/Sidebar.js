@@ -21,21 +21,19 @@ const Sidebar = () => {
         }
     }
 
-
-
     return (
         <div className="sidebar">
             <a href="#">Home</a>
             <div className="dropdown">
                 <div onClick={() => myFunction()} className="dropbtn">Battle</div>
                 <div id="myDropdown" className="dropdown-content">
-                    <a href="#">Abyss</a>
-                    <a href="#">Automaton Tower</a>
-                    <a href="#">Hall of Trials</a>
-                    <a href="#">Hunt</a>
-                    <a href="#">Labyrinth</a>
-                    <a href="#">Spirit Altar</a>
-                    <a href="#">Side Story</a>
+                    <a href="#abyss">Abyss</a>
+                    <a href="#automaton-tower">Automaton Tower</a>
+                    <a href="#hall-of-trials">Hall of Trials</a>
+                    <a href="#hunt">Hunt</a>
+                    <a href="#labyrinth">Labyrinth</a>
+                    <a href="#spirit-altar">Spirit Altar</a>
+                    <a href="#side-story">Side Story</a>
                 </div>
             </div>
             <a href="#contact">Pets DD</a>
