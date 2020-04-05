@@ -1,4 +1,5 @@
 import React from 'react';
+import Dropdown from './Dropdown';
 
 const Sidebar = () => {
     /* When the user clicks on the button,
@@ -24,18 +25,7 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <a href="#">Home</a>
-            <div className="dropdown">
-                <div onClick={() => myFunction()} className="dropbtn">Battle</div>
-                <div id="myDropdown" className="dropdown-content">
-                    <a href="#abyss">Abyss</a>
-                    <a href="#automaton-tower">Automaton Tower</a>
-                    <a href="#hall-of-trials">Hall of Trials</a>
-                    <a href="#hunt">Hunt</a>
-                    <a href="#labyrinth">Labyrinth</a>
-                    <a href="#spirit-altar">Spirit Altar</a>
-                    <a href="#side-story">Side Story</a>
-                </div>
-            </div>
+            <Dropdown myFunction={() => myFunction()}/>
             <a href="#contact">Pets DD</a>
             <a href="#about">Shop DD</a>
             <a href="#about">Adventure DD</a>
