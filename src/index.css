@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-color: #F4F4F3;
 }
+
+/* Style the header */
+.header {
+  background-color: #373F27;
+  color: #E9E7DA;
+  padding: 20px;
+  text-align: center;
+}
+
+.row {
+  height: 100%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  background-color: #636B46;
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  color: #E9E7DA;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #1E2923;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: #F4F4F3;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a:hover {
+  background-color: #161616;
+  color: #E9E7DA;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 0;
+  height: 1000px;
+}
+
+/* F4F4F3 whiteish - text on dark green and general bg? */
+/* 8C9A97 Quite light grey*/
+/* 848989 Darker grey*/
+/* 8C8B94 Clay grey?*/
+/* 1E2923 Dark green: menus etc*/
+/* 373F27 Bit lighter green*/
+/* 636B46 much lighter green */
+/* E9E7DA dim white */
