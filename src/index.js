@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { HashRouter, Route, Switch } from "react-router-dom";
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import DifferentView from './views/DifferentView';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route exact path="/about" component={DifferentView} />
+      </Switch>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
