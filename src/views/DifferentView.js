@@ -1,8 +1,17 @@
 import React from 'react';
+import Header from '../components/Header';
+import Column from '../components/Column';
 
 const DifferentView = () => {
     return(
-        <div>This is a different view</div>
+        <div>
+            <div className='content'>
+                <Header heading='Different view'/>
+                <div class="row">
+                    <Column />
+                </div>
+            </div>
+        </div>
     );
 }
 

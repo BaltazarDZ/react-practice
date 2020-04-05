@@ -1,14 +1,12 @@
 import React from 'react';
 import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
 import Column from '../components/Column';
 
 const Home = () => {
     return (
         <div>
-            <Sidebar />
             <div className='content'>
-                <Header />
+                <Header heading='Home view'/>
                 <div class="row">
                     <Column />
                 </div>

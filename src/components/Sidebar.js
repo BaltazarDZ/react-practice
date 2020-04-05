@@ -3,7 +3,7 @@ import React from 'react';
 const Sidebar = () => {
     return(
         <div class="sidebar">
-        <a href="#home">Home</a>
+        <a href="#">Home</a>
         <a href="#news">Battle DD</a>
         <a href="#contact">Pets DD</a>
         <a href="#about">Shop DD</a>
