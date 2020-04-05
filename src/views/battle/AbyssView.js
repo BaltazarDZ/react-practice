@@ -7,7 +7,7 @@ const AbyssView = () => {
         <div>
             <div className='content'>
                 <Header heading='Abyss view'/>
-                <div class="row">
+                <div className="row">
                     <Column />
                 </div>
             </div>

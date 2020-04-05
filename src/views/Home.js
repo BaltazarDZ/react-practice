@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div>
             <div className='content'>
-                <Header heading='Home view'/>
+                <Header heading='Epic Seven playground' text='React practice and polishing'/>
                 <div class="row">
                     <Column />
                 </div>
