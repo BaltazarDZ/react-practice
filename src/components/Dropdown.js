@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Dropdown = (props) => {
+
+    const [open, setOpen] = useState(false);
+
     return (
         <div className="dropdown">
-            <div onClick={props.myFunction} className="dropbtn">Battle</div>
-            <div id="myDropdown" className="dropdown-content">
+            <div onClick={() => setOpen(!open)} className="dropbtn">Battle</div>
+
+            {open &&
+            <div id="myDropdown" className="dropdown-content show">
                 <a href="#abyss">Abyss</a>
                 <a href="#automaton-tower">Automaton Tower</a>
                 <a href="#hall-of-trials">Hall of Trials</a>
@@ -12,7 +17,7 @@ const Dropdown = (props) => {
                 <a href="#labyrinth">Labyrinth</a>
                 <a href="#spirit-altar">Spirit Altar</a>
                 <a href="#side-story">Side Story</a>
-            </div>
+            </div>}
         </div>
     )
 }
